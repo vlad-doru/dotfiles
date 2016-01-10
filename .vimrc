@@ -15,8 +15,6 @@ Plugin 'SirVer/ultisnips'
 Plugin 'ladislas/vim-snippets'
 " Fuzzy finder
 Plugin 'ctrlpvim/ctrlp.vim'
-" TabBar
-Plugin 'bling/vim-airline'
 " Git status line
 Plugin 'tpope/vim-fugitive'
 " Powerline fonts
@@ -107,31 +105,6 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-
-" Powerline
-set laststatus=2
-set ttimeoutlen=50
-let g:airline_powerline_fonts = 1
-if !exists('g:airline_symbols')
-	let g:airline_symbols = {}
-endif
-let g:airline_symbols.space = "\ua0"
-" unicode symbols
-let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
-let g:airline_symbols.linenr = '␊'
-let g:airline_symbols.linenr = '␤'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
 
 " Easymotion
 map <Leader> <Plug>(easymotion-prefix)

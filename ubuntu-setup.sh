@@ -85,6 +85,13 @@ sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /et
 sudo apt-get update 
 sudo apt-get install google-chrome-stable
 
+echo "Installing JAVA."
+sudo apt-get install -y default-jre default-jdk
+sudo apt-get install -y python-software-properties
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+
 echo "Remove useless stuff."
 sudo apt-get -y autoremove
 

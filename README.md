@@ -19,3 +19,4 @@ The script installs the following components:
 * ZSH - with Prezto configuration framework
 * Docker
 * Chrome
+* JAVA

@@ -41,6 +41,10 @@ Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-commentary'
 " Rainbow paranthesis
 Plugin 'luochen1990/rainbow'
+" Latex support
+Plugin 'lervag/vimtex'
+" Vim autosave 
+Plugin 'vim-scripts/vim-auto-save'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -111,3 +115,11 @@ map <Leader> <Plug>(easymotion-prefix)
 
 " Rainbow Paranthesis
 let g:rainbow_active = 1 
+
+set ruler
+
+" Vim auto-save
+let g:auto_save = 1 
+let g:auto_save_no_updatetime = 1 
+let g:auto_save_in_insert_mode = 0 
+set mouse=a
